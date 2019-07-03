@@ -10,5 +10,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class SpringTest {
 	public static void main(String[] args) {
 		AnnotationConfigApplicationContext configApplicationContext=new AnnotationConfigApplicationContext(ScanTest.class);
+		configApplicationContext.getBean("factoryBeanTest");
 	}
 }
